@@ -1,14 +1,12 @@
-let a = 'name'
+const stringArray = ["banana", "john", "doe", "emma"];
+const linearSearch = (arr, search) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === search) {
+      return "Yes, the string exists in the array";
+    }
+  }
+  return "No, the string does not exist in the array";
+};
 
-function linearSearch(string){
-
-        if(string === ''){
-        console.log("string", Yes)
-        }
-      else {
-         console.log("string", No)
-    }  
-        
-   
-}
-console.log(linearSearch(a))
+console.log(linearSearch(stringArray, "fruit"));
+console.log(linearSearch(stringArray, "john"));
