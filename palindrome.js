@@ -1,7 +1,7 @@
+const palindrome = (word) => {
+  const reversedWord = word.split('').reverse().join('');
+  return word === reversedWord;
+};
 
-let names=['paint', 'tree', 'friend', 'palindrome']
-
-function palindrome(words){
-    return words.find(word=>word === 'palindrome')
-}
-console.log(palindrome(names))
+console.log(palindrome('level'));
+console.log(palindrome('energy'));
